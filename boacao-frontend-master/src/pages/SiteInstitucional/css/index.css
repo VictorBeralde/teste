@@ -1,0 +1,1164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*header*/
+.header-home {
+    background-color: #11111F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.containerHeader-home {
+    width: 50%;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+}
+
+.header-home ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 90%;
+}
+
+.header-home li {
+    list-style: none;
+}
+
+.headerLink-home {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    color: #ffff;
+    line-height: 2;
+    position: relative;
+}
+
+.headerLink-home:hover {
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+
+
+.headerLink-home::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #375A88;
+    position: absolute;
+    bottom: -.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+}
+
+.headerLink-home:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.logo-home {
+    display: flex;
+    margin-right: 20em;
+    width: 20vh;
+}
+
+.onda-home {
+    width: 100%;
+}
+
+/*conteudo*/
+
+.corpo-home {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 0vh 15vh 0vh;
+    gap: 70px;
+}
+
+/* .texto-home {
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    left: 16%;
+} */
+
+.texto-mudanca-home {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 35vw;
+    font-size: 40px;
+    font-weight: 400;
+    /* padding: 0px 0px 0px 10px; */
+    letter-spacing: 2px;
+    line-height: 1.5;
+    /* margin: 2em 0 2em 0; */
+}
+
+.fazaboa-home {
+    margin-top: 2vh;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+/* .imagem {
+    display: flex;
+    padding: 0vh 50vh 50vh 40vh;
+    height: 40vh;
+    width: 40vh;
+    margin-left: 40vw;
+    align-items: center;
+    justify-content: center;
+} */
+
+.doar-home {
+    height: 55vh;
+    /* display: flex; */
+}
+
+/* .cadastrar-home {
+    height: 2.5em;
+    width: 15vw;
+    border-radius: 30px;
+    color: #ffff;
+    background-color: #375A88;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+} */
+
+.cadastrar-home {
+    width: 200px;
+    height: 50px;
+    background-color: #375A88;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: solid 1px #375A88;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.cadastrar-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cadastrar-home:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cadastrar-home span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+/*Sobre nós*/
+.corpo-sobre-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #11111F;
+    color: #ffff;
+}
+
+.h2-sobre{
+    font-weight: 700;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.quem-somos-home {
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 70vw;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h3 {
+    /* margin-top: 6vh; */
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.objetivos-home {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 15vh;
+}
+
+.caixa-objetivo-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: #ffff;
+    color: #000;
+    text-align: center;
+    margin: 0 2vw;
+    width: 22vw;
+    padding: 45px 5px 0px 5px;
+    z-index: 0;
+}
+
+h4{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.imagem-home {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -10vh;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #375A88;
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+
+.imagem-home img{
+    width: 110px;
+}
+
+.texto-sobre-home {
+    margin-top: 2vh;
+    width: 20vw;
+    height: 20vh;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*campanha*/
+.corpo-campanha-home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.campanha-frase-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+/* 
+.h2-campanha {
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-style: italic;
+} */
+
+.h2-campanha{
+    width: 90%;
+    font-weight: 700;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+    /* letter-spacing: 2px; */
+    line-height: 1;
+}
+
+.frase-campanha img{
+    margin-top: -15%;
+    width: 500px;
+}
+
+.container-cards-home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.itens-campanhas-home {
+    margin-right: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alimentos-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11111F;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.item-imagem-home {
+    margin-top: 15px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+}
+
+.item-frase-home {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin: -1.5em 0 -1.5em 0;
+}
+
+.item-frase-home h2 {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/*Carrossel*/
+.container-carrossel-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: #11111F;
+    color: #ffff;
+    margin-top: 150px;
+}
+
+.carrossel-frase-home {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+.dentro-carrossel-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-beneficios-home {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+/* .container-carrossel-home h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+} */
+
+.beneficios-imagem-home{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.beneficios-imagem-home img {
+    width: 400px;
+    /* margin-top: 10px;
+    margin-left: 15%; */
+}
+
+.dentro-carrossel-home p {
+    display: flex;
+    margin-left: 150px;
+}
+
+.principal-benecifico-home {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setaEsquerda-home {
+    display: flex;
+    margin-left: 150px;
+}
+
+.setaDireita-home {
+    display: flex;
+    margin-right: 70px;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+.container-contato-home {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: #ffff;
+}
+
+.container-parte-contato-home {
+    display: flex;
+}
+
+.titulo-contato{
+    width: 30%;
+    margin-left: 100px;
+}
+
+.contato-frase-home {
+    font-weight: 700;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.contato-informacoes-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 358.69px;
+    margin-left: 250px;
+    margin-top: 150px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.container-informacoes-imagem-home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-informacoes-imagem-home img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+.container-informacoes-home {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.contato-informacoes-home span {
+    font-size: 1.5em;
+    margin-left: 15px;
+    color: #375A88;
+}
+
+.contato-imagem-home {
+    width: 423px;
+    height: 337px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+.navbar-nome-home {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #11111F;
+}
+
+.slide1-home {
+    display: flex;
+    width: 100%;
+    display: flex;
+}
+
+.slide2-home {
+    display: none;
+    width: 100%;
+    display: flex;
+}
+
+.slide3-home {
+    display: none;
+    width: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: 750px) {
+    .container-home-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .corpo-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .texto-home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fazaboa-home {
+        font-size: 8vh;
+    }
+
+    .texto-mudanca-home {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imagem {
+        width: 40%;
+    }
+
+    .doar-home {
+        width: 100%;
+        height: 50%;
+    }
+
+    .corpo-campanha-home {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .campanha-frase-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .h2-campanha {
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .frase-campanha {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frase-campanha img {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-cards-home{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .itens-campanhas-home {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .alimentos-home {
+        width: 50%;
+    }
+
+    .corpo-sobre-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .h2-sobre {
+        font-size: 4vh;
+    }
+
+    .objetivos-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .caixa-objetivo-home {
+        width: 95%;
+        display: flex;
+        margin-bottom: 25%;
+    }
+
+    .texto-sobre-home {
+        width: 100%;
+    }
+
+    .container-carrossel-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .h2-campanha {
+        font-size: 40px;
+    }
+
+    .dentro-carrossel-home {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .setaEsquerda-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    .setaEsquerda-home a img {
+        width: 20px;
+    }
+
+    .setaDireita-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .setaDireita-home a img {
+        width: 20px;
+    }
+
+    .container-parte-contato-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slide1-home {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-beneficios-home {
+        width: 0%;
+    }
+
+    .beneficios-imagem-home img{
+        width: 0%;
+    }
+
+    .principal-benecifico-home {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-benecifico-home h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-benecifico-home p {
+        margin-left: 20px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container-contato-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container-parte-contato-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titulo-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contato-frase-home {
+        font-size: 5vh;
+    }
+
+    .titulo-contato h3 {
+        font-size: 3vh;
+    }
+
+    .contato-informacoes-home {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .container-informacoes-imagem-home {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-informacoes-imagem-home img {
+        width: 25%;
+    }
+
+    .container-informacoes-home {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-informacoes-home span {
+        width: 100%;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1025px) {
+
+    .container-home-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .corpo-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .texto-home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fazaboa-home {
+        font-size: 8vh;
+    }
+
+    .texto-mudanca-home {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .cadastrar-home {
+        width: 30%;
+        font-size: 20px;
+    }
+
+    .imagem {
+        width: 40%;
+    }
+
+    .doar-home {
+        width: 100%;
+        height: 50%;
+    }
+
+    .corpo-campanha-home {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .campanha-frase-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .h2-campanha {
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .frase-campanha {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frase-campanha img {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-cards-home{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .itens-campanhas-home {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .alimentos-home {
+        width: 40%;
+        gap: 10px;
+    }
+
+    .item-imagem-home {
+        width: 100%;
+    }
+
+    .item-imagem-home img {
+        width: 100%;
+    }
+
+
+    .item-frase-home h2 {
+        font-size: 15px;
+    }
+
+    .corpo-sobre-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .h2-sobre {
+        font-size: 40px;
+    }
+
+    .objetivos-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .caixa-objetivo-home {
+        width: 95%;
+        display: flex;
+        margin-bottom: 25%;
+    }
+
+    .caixa-objetivo-home h4 {
+        font-size: 40px;
+    }
+
+    .texto-sobre-home {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .container-carrossel-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .h2-campanha {
+        font-size: 40px;
+    }
+
+    .dentro-carrossel-home {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .setaEsquerda-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    .setaEsquerda-home a img {
+        width: 20px;
+    }
+
+    .setaDireita-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .setaDireita-home a img {
+        width: 20px;
+    }
+
+    .container-parte-contato-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .slide1-home {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-beneficios-home {
+        width: 0%;
+    }
+
+    .beneficios-imagem-home img{
+        width: 0%;
+    }
+
+    .principal-benecifico-home {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-benecifico-home h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-benecifico-home p {
+        margin-left: 20px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container-contato-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container-parte-contato-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titulo-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contato-frase-home {
+        font-size: 5vh;
+    }
+
+    .titulo-contato h3 {
+        font-size: 3vh;
+    }
+
+    .contato-informacoes-home {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .container-informacoes-imagem-home {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container-informacoes-home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-informacoes-home span {
+        width: 100%;
+        margin-right: 5px;
+    }
+}

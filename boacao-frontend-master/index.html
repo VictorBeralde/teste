@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoAção</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="./src/main.tsx"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script>
+    function applyBackgroundBasedOnUrl() {
+      if (window.location.href.includes('formulario-doador') || window.location.href.includes('formulario-ong')) {
+        document.body.style.backgroundColor = '#11111F';
+      } else {
+        document.body.style.backgroundColor = ''; 
+      }
+    }
+
+    applyBackgroundBasedOnUrl();
+
+    (function(history) {
+      const pushState = history.pushState;
+      const replaceState = history.replaceState;
+
+      history.pushState = function(state, title, url) {
+        const result = pushState.apply(history, arguments);
+        window.dispatchEvent(new Event('pushstate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return result;
+      };
+
+      history.replaceState = function(state, title, url) {
+        const result = replaceState.apply(history, arguments);
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return result;
+      };
+
+      window.addEventListener('popstate', function() {
+        window.dispatchEvent(new Event('locationchange'));
+      });
+    })(window.history);
+
+    // Adiciona um ouvinte para o evento personalizado 'locationchange'
+    window.addEventListener('locationchange', applyBackgroundBasedOnUrl);
+  </script>
+</body>
+
+</html>
