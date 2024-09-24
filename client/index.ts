@@ -1,5 +1,0 @@
-export * from './usuario-result'
-export * from './endereco-result'
-export * from './telefone-result'
-export * from './pagination'
-export * from './page'

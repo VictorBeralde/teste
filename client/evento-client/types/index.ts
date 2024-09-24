@@ -1,5 +1,0 @@
-export * from './create-event-command'
-export * from './events-result'
-export * from './event-by-id-result'
-export * from './update-image-by-event-id-command'
-export * from './event-query'
